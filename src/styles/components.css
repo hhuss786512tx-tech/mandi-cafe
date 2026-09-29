@@ -40,7 +40,8 @@ body { padding-bottom: calc(var(--bar-h) + env(safe-area-inset-bottom)); }
 .hero__meta { margin-top: var(--s-6); display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-5); font-size: var(--step--1); color: var(--paper-muted); }
 .hero__meta a { color: var(--cream); }
 .hero .arabic { font-size: 1.35em; color: var(--saffron); display: inline-block; margin-right: 0.6em; letter-spacing: 0; text-transform: none; vertical-align: -0.1em; }
-.status { display: inline-flex; align-items: center; gap: var(--s-2); font-size: var(--step--1); font-weight: 600; color: var(--cream); }
+.status { display: inline-flex; align-items: center; gap: var(--s-2); font-size: var(--step--1); font-weight: 600; color: var(--ink); }
+.hero .status { color: var(--cream); }
 .status__dot { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--paper-muted); }
 .status.is-open .status__dot { background: #8fbf5a; box-shadow: 0 0 0 3px rgba(143, 191, 90, 0.25); }
 .status.is-closed .status__dot { background: var(--copper); }

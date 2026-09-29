@@ -328,9 +328,12 @@ export function createHero(host: HTMLElement, canvas: HTMLCanvasElement, opts: H
 
   // ---- render loop: only while visible and the tab is active ----
   let visible = true, hidden = document.hidden, raf = 0, t0 = performance.now();
+  const still = Boolean(opts.immediate); // headless captures render one frame and never loop
   const io = new IntersectionObserver(([e]) => { visible = e.isIntersecting; tick(); }, { threshold: 0 });
-  io.observe(host);
-  document.addEventListener('visibilitychange', () => { hidden = document.hidden; tick(); });
+  if (!still) {
+    io.observe(host);
+    document.addEventListener('visibilitychange', () => { hidden = document.hidden; tick(); });
+  }
 
   const frame = (now: number) => {
     const t = (now - t0) / 1000;
@@ -345,7 +348,7 @@ export function createHero(host: HTMLElement, canvas: HTMLCanvasElement, opts: H
     renderer.render(scene, camera);
   };
   const loop = (now: number) => { frame(now); raf = (visible && !hidden) ? requestAnimationFrame(loop) : 0; };
-  const tick = () => { if (visible && !hidden && !raf) raf = requestAnimationFrame(loop); };
+  const tick = () => { if (!still && visible && !hidden && !raf) raf = requestAnimationFrame(loop); };
 
   if (opts.immediate) {
     // Poster/OG render: one deterministic frame, then signal the screenshot script.
