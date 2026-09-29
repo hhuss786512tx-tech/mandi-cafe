@@ -1,0 +1,44 @@
+/* Design tokens. Every colour pair used for text is checked in scripts/contrast.mjs. */
+:root {
+  --espresso: #1b120d;
+  --espresso-2: #26190f;
+  --cream: #f4ebdd;
+  --cream-2: #eadfcb;
+  --saffron: #c98a1b;
+  --copper: #a4552b;
+  --copper-ink: #7f3f1e;    /* copper for body text on cream (AA) */
+  --olive: #5b6135;
+
+  --ink: var(--espresso);
+  --ink-muted: #5a4a3f;      /* secondary text on cream */
+  --paper: var(--cream);
+  --paper-muted: rgba(244, 235, 221, 0.74); /* secondary text on espresso */
+  --hair-on-cream: rgba(27, 18, 13, 0.16);
+  --hair-on-espresso: rgba(244, 235, 221, 0.18);
+
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-text: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-arabic: 'Noto Naskh Arabic', 'Amiri', serif;
+
+  /* fluid type: 360px → 1440px */
+  --step--1: clamp(0.8125rem, 0.78rem + 0.15vw, 0.9rem);
+  --step-0: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.5vw, 1.5rem);
+  --step-2: clamp(1.5rem, 1.25rem + 1vw, 2.125rem);
+  --step-3: clamp(2rem, 1.5rem + 2vw, 3.25rem);
+  --step-4: clamp(2.6rem, 1.6rem + 4.2vw, 5.25rem);
+  --step-5: clamp(3.2rem, 1.4rem + 7.4vw, 8rem);
+
+  /* 8px spacing scale */
+  --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem; --s-4: 1rem; --s-5: 1.5rem;
+  --s-6: 2rem; --s-7: 3rem; --s-8: 4rem; --s-9: 6rem; --s-10: 8rem; --s-11: 10rem;
+
+  --gutter: clamp(1rem, 4vw, 3rem);
+  --max: 82rem;
+  --radius: 2px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur: 600ms;
+  --header-h: 4.25rem;
+  --bar-h: 3.75rem;
+}

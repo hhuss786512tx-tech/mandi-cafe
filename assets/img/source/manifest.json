@@ -1,0 +1,12 @@
+{
+  "$comment": "One entry per file in this folder. `alt` describes the actual dish or space. `id` is optional (defaults to the filename without extension).",
+  "hero-poster.png": {
+    "alt": "Copper mandi tray piled with saffron rice, fried onion, raisins and almonds, topped with a roasted chicken quarter",
+    "origin": "Rendered from this site's own procedural 3D scene (scripts/poster.mjs). Not a photograph.",
+    "approved": true
+  },
+  "og-source.png": {
+    "skip": true,
+    "origin": "Rendered hero composition used for public/og.jpg (scripts/poster.mjs). Not part of the srcset pipeline."
+  }
+}

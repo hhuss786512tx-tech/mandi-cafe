@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ name }} · Halal Yemeni restaurant in Richmond, TX</title>
+  <meta name="description" content="{{ metaDescription }}">
+  <link rel="canonical" href="{{ siteUrlValue }}/">
+  <meta name="theme-color" content="#1b120d">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:site_name" content="{{ name }}">
+  <meta property="og:title" content="{{ name }} · Halal Yemeni restaurant in Richmond, TX">
+  <meta property="og:description" content="{{ metaDescription }}">
+  <meta property="og:url" content="{{ siteUrlValue }}/">
+  <meta property="og:image" content="{{ siteUrlValue }}/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Copper mandi tray with saffron rice, the signature of {{ name }}">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ name }} · Halal Yemeni restaurant in Richmond, TX">
+  <meta name="twitter:description" content="{{ metaDescription }}">
+  <meta name="twitter:image" content="{{ siteUrlValue }}/og.jpg">
+  <link rel="preload" href="/fonts/fraunces-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/manrope-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <!--@ preloadPoster -->
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <!--@ jsonLdRestaurant -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a class="wordmark" href="/" aria-label="{{ name }}, home">{{ name }}<span class="arabic" lang="ar" aria-hidden="true">{{ nameArabicText }}</span></a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--ghost header__cta" href="tel:{{ phone.e164 }}">Call {{ phone.display }}</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title" data-hero>
+      <div class="container hero__inner">
+        <div class="hero__scene" data-scene>
+          <!--@ heroPoster -->
+          <canvas class="hero__canvas" data-canvas aria-hidden="true"></canvas>
+        </div>
+        <div class="hero__copy">
+          <p class="eyebrow" style="color: var(--saffron)"><span class="arabic" lang="ar" aria-hidden="true">{{ nameArabicText }}</span>Richmond, Texas</p>
+          <h1 class="hero__title" id="hero-title" data-split>Mandi Cafe <em>&amp;</em> Grill</h1>
+          <p class="hero__desc" data-reveal>{{ descriptor }}</p>
+          <div class="hero__actions" data-reveal>
+            <a class="btn btn--solid" href="#menu">View menu</a>
+            <a class="btn btn--ghost" href="{{ directionsUrl }}" rel="noopener" target="_blank">Get directions<span class="sr-only"> (opens Google Maps in a new tab)</span></a>
+          </div>
+          <div class="hero__meta" data-reveal>
+            <!--@ status -->
+            <span>{{ address.street }}, {{ address.city }}</span>
+            <a href="tel:{{ phone.e164 }}">{{ phone.display }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__rule" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="signatures" aria-labelledby="sig-title">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Signature dishes</p>
+            <h2 class="display" id="sig-title" data-split>What to order first</h2>
+          </div>
+          <p class="section-head__aside" data-reveal>Four plates that define the kitchen. Rice cooked in the meat's own stock, then finished with fried onions, raisins and almonds. Everything is halal.</p>
+        </header>
+        <ol class="sig-list">
+          <!--@ signatures -->
+        </ol>
+      </div>
+    </section>
+
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Menu</p>
+            <h2 class="display" id="menu-title" data-split>The full menu</h2>
+            <nav class="menu-jump" aria-label="Menu categories" data-menu-jump><!--@ menuJump --></nav>
+          </div>
+          <p class="section-head__aside" data-reveal>Halal throughout. Prices in US dollars. <a href="/menu.html">Printable menu</a>.</p>
+        </header>
+        <div class="menu-groups">
+          <!--@ menu -->
+        </div>
+        <p class="menu-note">
+          <span>Half trays serve three to four. Call <a href="tel:{{ phone.e164 }}">{{ phone.display }}</a> for larger orders.</span>
+          <!--@ orderLink {"className":"btn btn--ghost on-cream"} -->
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="story" aria-labelledby="story-title">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Story</p>
+            <h2 class="display" id="story-title" data-split>{{ story.heading }}</h2>
+          </div>
+        </header>
+        <div class="story__grid">
+          <div class="story__text" data-reveal><!--@ story --></div>
+          <p class="story__pull" data-reveal>Halal, slow-cooked, and served on Crabb River Rd.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Gallery</p>
+            <h2 class="display" id="gallery-title" data-split>The room and the plates</h2>
+          </div>
+        </header>
+        <!--@ gallery -->
+      </div>
+    </section>
+
+    <section class="section" id="visit" aria-labelledby="visit-title">
+      <div class="container">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Visit</p>
+            <h2 class="display" id="visit-title" data-split>Find us on Crabb River Rd</h2>
+          </div>
+        </header>
+        <div class="visit__grid">
+          <div class="visit__col" data-reveal>
+            <div class="visit__block">
+              <h3>Address</h3>
+              <address class="visit__addr">{{ address.street }}<br>{{ address.city }}, {{ address.region }} {{ postalCode }}</address>
+              <div class="visit__links">
+                <a class="btn btn--solid" href="{{ directionsUrl }}" rel="noopener" target="_blank">Get directions<span class="sr-only"> (opens Google Maps in a new tab)</span></a>
+                <!--@ orderLink {"className":"btn btn--ghost on-cream"} -->
+              </div>
+            </div>
+            <div class="visit__block">
+              <h3>Phone</h3>
+              <a class="visit__phone" href="tel:{{ phone.e164 }}">{{ phone.display }}</a>
+              <p class="visit__note">Call ahead for family trays.</p>
+            </div>
+          </div>
+          <div class="visit__col" data-reveal>
+            <div class="visit__block">
+              <h3>Hours</h3>
+              <!--@ hoursTable -->
+              <p class="visit__note"><!--@ status --></p>
+            </div>
+          </div>
+          <div class="visit__map" data-reveal>
+            <div class="map" data-map data-src="{{ mapEmbedUrl }}">
+              <button type="button" class="map__load" data-map-load>
+                <strong>{{ address.street }}, {{ address.city }}, {{ address.region }}</strong>
+                <small>Load the Google map. Nothing from Google loads until you choose to.</small>
+                <span class="btn btn--ghost on-cream">Show map</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__name">{{ name }}<span class="arabic" lang="ar" aria-hidden="true">{{ nameArabicText }}</span></p>
+          <address>
+            {{ address.street }}<br>{{ address.city }}, {{ address.region }} {{ postalCode }}<br>
+            <a href="tel:{{ phone.e164 }}">{{ phone.display }}</a>
+          </address>
+        </div>
+        <nav aria-label="Footer">
+          <ul class="footer__links">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#visit">Visit</a></li>
+            <li><a href="/menu.html">Print menu</a></li>
+          </ul>
+        </nav>
+        <div><!--@ social --></div>
+      </div>
+      <div class="footer__legal">
+        <span>© {{ year }} {{ name }}. Halal Yemeni &amp; Middle Eastern food in Richmond, TX.</span>
+        <span>No cookies, no tracking.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!--@ buildNotes -->
+
+  <nav class="bar" aria-label="Quick actions">
+    <a href="tel:{{ phone.e164 }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Call</a>
+    <a href="{{ directionsUrl }}" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2 2 12l10 10 10-10z"/><path d="M9 13v-2h5V8l3 3-3 3v-2z"/></svg>Directions</a>
+    <a href="#menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>Menu</a>
+  </nav>
+
+  <dialog class="lightbox" data-lightbox-dialog aria-label="Photo viewer">
+    <div class="lightbox__inner">
+      <div class="lightbox__top">
+        <span class="lightbox__caption" data-lightbox-counter></span>
+        <button type="button" class="lightbox__btn" data-lightbox-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+      </div>
+      <div class="lightbox__stage" data-lightbox-stage></div>
+      <div class="lightbox__bottom">
+        <button type="button" class="lightbox__btn" data-lightbox-prev aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
+        <span class="lightbox__caption" data-lightbox-caption></span>
+        <button type="button" class="lightbox__btn" data-lightbox-next aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

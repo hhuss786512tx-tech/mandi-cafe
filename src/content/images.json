@@ -1,0 +1,22 @@
+{
+  "hero-poster": {
+    "alt": "Copper mandi tray piled with saffron rice, fried onion, raisins and almonds, topped with a roasted chicken quarter",
+    "width": 1920,
+    "height": 1440,
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "formats": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASABgDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAQFBgEC/8QAIRAAAgICAgEFAAAAAAAAAAAAAAECAwUSBHERBhMyQVH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgMA/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQACESH/2gAMAwEAAhEDEQA/AMXCuc/jFvolvFcxQ39mTRLweWp4L1vpVkejSR9T43XbVp/ngjrWh8KwHLCyhKD8Si12CyzWQp5tzdFSgmBzqSoD5Vf2egAwuMAGhf/Z",
+    "source": "hero-poster.png",
+    "lowRes": false,
+    "origin": "Rendered from this site's own procedural 3D scene (scripts/poster.mjs). Not a photograph.",
+    "approved": true
+  }
+}

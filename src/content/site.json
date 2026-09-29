@@ -1,0 +1,128 @@
+{
+  "$comment": "Single source of truth for the site. Edit this file, then run `npm run build`. Every fact with confirmed:false is still open with the owner and is listed in the Build notes section while buildNotes is true.",
+  "buildNotes": true,
+  "name": "Mandi Cafe & Grill",
+  "shortName": "Mandi Cafe",
+  "nameArabic": { "text": "مندي", "confirmed": false, "note": "Only the word 'mandi' (مندي) is shown as a typographic accent. Confirm the full Arabic spelling of the restaurant name with the owner before extending it." },
+  "descriptor": "Halal Yemeni & Middle Eastern kitchen in Richmond, TX",
+  "metaDescription": "Mandi Cafe & Grill serves halal Yemeni mandi, zurbian and grilled plates at 734 Crabb River Rd in Richmond, TX. Menu, hours, directions and phone.",
+  "siteUrl": { "value": "https://mandicafe-richmond.example", "confirmed": false, "note": "Replace with the real domain before launch. It feeds the canonical URL, Open Graph tags, sitemap.xml and JSON-LD." },
+  "cuisine": ["Yemeni", "Middle Eastern"],
+  "halal": true,
+  "address": {
+    "street": "734 Crabb River Rd",
+    "city": "Richmond",
+    "region": "TX",
+    "postalCode": { "value": "77469", "confirmed": false, "note": "77469 appears on public listings for this address. Confirm against the Google Business Profile." },
+    "country": "US",
+    "mapsQuery": "Mandi Cafe & Grill, 734 Crabb River Rd, Richmond, TX 77469"
+  },
+  "phone": {
+    "display": "(832) 867-3737",
+    "e164": "+18328673737",
+    "confirmed": false,
+    "note": "The brief gives (832) 867-3737. Public listings (Facebook, Yelp) show (346) 676-2634 for the same address. Confirm which number the owner wants published; the site must match the Google listing exactly."
+  },
+  "hours": {
+    "timezone": "America/Chicago",
+    "confirmed": false,
+    "note": "Hours below are from the restaurant's Facebook page (Mon–Thu 12–10 pm, Fri–Sat 12 pm–12 am, Sun 12–10 pm). A delivery listing shows 12:30 pm opening and 11 pm Fri–Sat close. Confirm from the Google Business Profile.",
+    "weekly": {
+      "mon": [["12:00", "22:00"]],
+      "tue": [["12:00", "22:00"]],
+      "wed": [["12:00", "22:00"]],
+      "thu": [["12:00", "22:00"]],
+      "fri": [["12:00", "24:00"]],
+      "sat": [["12:00", "24:00"]],
+      "sun": [["12:00", "22:00"]]
+    }
+  },
+  "service": {
+    "confirmed": false,
+    "note": "Dine-in, takeout and delivery options are not confirmed. Third-party listings show pickup and delivery; dine-in is implied by the lounge seating but unverified.",
+    "dineIn": null,
+    "takeout": null,
+    "delivery": null
+  },
+  "ordering": {
+    "label": "Order online",
+    "url": "https://order.online/store/mandi-cafe-richmond-33973961",
+    "confirmed": false,
+    "note": "This is the DoorDash Storefront link found on public listings. Confirm it is the owner's preferred ordering link, otherwise remove it. No checkout is built into this site."
+  },
+  "social": [
+    { "platform": "Facebook", "url": "https://www.facebook.com/people/Mandi-Cafe-Grill/61575050244721/", "confirmed": false, "note": "Facebook page found by search. Confirm it belongs to this location." }
+  ],
+  "priceRange": { "value": "", "confirmed": false, "note": "Set to '$' or '$$' to match the Google listing. Omitted from JSON-LD until set." },
+  "story": {
+    "confirmed": false,
+    "note": "No owner-provided story yet. The paragraphs below only state what public listings show. Replace with the owner's own words (who cooks, where the recipes come from, when they opened).",
+    "heading": "Slow-cooked mandi, served the way it is meant to be shared",
+    "paragraphs": [
+      "Mandi is the centrepiece: rice cooked in the seasoned stock of the meat above it, then finished with fried onions, raisins and almonds. Chicken, lamb shank, goat and fish come out over the same fragrant rice.",
+      "Zurbian, the Yemeni biryani, sits alongside it, and the grill covers shawarma and gyro wraps for a quicker lunch. Everything on the menu is halal."
+    ]
+  },
+  "signatures": ["half-chicken-mandi", "lamb-shank-mandi", "mutton-zurbian", "goat-mandi"],
+  "menu": {
+    "confirmed": false,
+    "note": "Items and prices were transcribed from the restaurant's public delivery listings (Postmates / DoorDash Storefront). Delivery prices are often marked up. Confirm every item and in-store price with the owner, add anything missing (drinks, sides, desserts, Yemeni tea), and remove anything no longer served.",
+    "printable": { "confirmed": false, "note": "menu.html is print-ready (File → Print → Save as PDF). Confirm whether the owner also wants a separately designed PDF menu." },
+    "categories": [
+      {
+        "id": "mandi",
+        "name": "Mandi",
+        "blurb": "Rice cooked over the meat's own stock, finished with fried onions, raisins and almonds.",
+        "items": [
+          { "id": "half-chicken-mandi", "name": "Half Chicken Mandi", "description": "Half a chicken over mandi rice, with fried onions and raisins.", "price": 14.99 },
+          { "id": "full-chicken-mandi", "name": "Full Chicken Mandi", "description": "A whole chicken over mandi rice. Built for two.", "price": 19.99 },
+          { "id": "lamb-shank-mandi", "name": "Lamb Shank Mandi", "description": "Slow-cooked lamb shank over mandi rice with raisins and almonds.", "price": 14.99 },
+          { "id": "goat-mandi", "name": "Goat Mandi", "description": "Tender goat over mandi rice with raisins, almonds and caramelized onions.", "price": 14.99 },
+          { "id": "fish-mandi", "name": "Full Fish Mandi", "description": "Whole fish over mandi rice.", "price": 14.99 }
+        ]
+      },
+      {
+        "id": "zurbian",
+        "name": "Zurbian",
+        "blurb": "The Yemeni biryani: basmati rice layered with meat and whole spices.",
+        "items": [
+          { "id": "mutton-zurbian", "name": "Mutton Zurbian", "description": "Basmati rice and tender mutton cooked with a blend of whole spices.", "price": 14.99 },
+          { "id": "chicken-zurbian", "name": "Chicken Zurbian", "description": "Aromatic rice with halal chicken, fried onions and a green chili.", "price": null }
+        ]
+      },
+      {
+        "id": "grill",
+        "name": "Grill & wraps",
+        "blurb": "Quicker plates from the grill, each served as a combo.",
+        "items": [
+          { "id": "chicken-shawarma-combo", "name": "Chicken Shawarma Combo", "description": "Seasoned chicken with lettuce, tomato, onion and garlic sauce in warm pita, with fries.", "price": 9.99 },
+          { "id": "gyro-wrap-combo", "name": "Gyro Wrap Combo", "description": "Gyro meat wrapped in pita, with fries.", "price": 12.99 },
+          { "id": "chicken-philly-combo", "name": "Chicken Philly Cheese Combo", "description": "Grilled chicken, onions and melted cheese on a roll, with fries.", "price": 12.99 }
+        ]
+      },
+      {
+        "id": "trays",
+        "name": "Family trays",
+        "blurb": "Half trays serve three to four. Call ahead for full trays.",
+        "items": [
+          { "id": "tray-chicken-mandi", "name": "Half Tray Chicken Mandi", "description": "Four chicken leg pieces over seasoned rice with fried onions and raisins.", "price": null, "serves": "3–4" },
+          { "id": "tray-lamb-shank-mandi", "name": "Half Tray Lamb Shank Mandi", "description": "Four lamb shanks over mandi rice.", "price": 49.99, "serves": "3–4" },
+          { "id": "tray-mutton-mandi", "name": "Half Tray Mutton Mandi", "description": "Three portions of mutton over mandi rice.", "price": 39.99, "serves": "3–4" },
+          { "id": "tray-chicken-zurbian", "name": "Half Tray Chicken Zurbian", "description": "Chicken zurbian for the table.", "price": 29.99, "serves": "3–4" }
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "confirmed": false,
+    "note": "No owner-approved photos yet. Drop originals in assets/img/source/, record them in assets/img/CREDITS.md, run `npm run images`, then list their ids here (8–12 images).",
+    "images": []
+  },
+  "visit": {
+    "parking": { "value": "", "confirmed": false, "note": "Add a one-line parking note (e.g. free lot in front) once confirmed." },
+    "hookah": { "confirmed": false, "note": "Public listings describe the venue as a hookah lounge (outdoor, indoor after 10 pm). Not mentioned on the site until the owner confirms it should be." }
+  },
+  "footer": {
+    "since": { "value": "", "confirmed": false, "note": "Do not add 'since YYYY' or 'family recipe' claims until verified." }
+  }
+}
