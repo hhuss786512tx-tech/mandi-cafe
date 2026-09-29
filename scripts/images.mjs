@@ -7,7 +7,7 @@ import { basename, extname, join, resolve } from 'node:path';
 const ROOT = resolve(import.meta.dirname, '..');
 const SRC = join(ROOT, 'assets/img/source');
 const OUT = join(ROOT, 'public/img');
-const WIDTHS = [640, 1280, 1920];
+const WIDTHS = [640, 960, 1280, 1920];
 const EXT = new Set(['.jpg', '.jpeg', '.png', '.webp', '.avif', '.tif', '.tiff']);
 
 await mkdir(OUT, { recursive: true });

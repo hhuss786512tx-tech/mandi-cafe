@@ -17,12 +17,15 @@ const SECTIONS = ['hero', 'signatures', 'menu', 'story', 'gallery', 'visit', 'fo
 async function settle(page) {
   await page.evaluate(() => document.fonts.ready);
   await page.waitForFunction(() => document.querySelector('[data-scene]')?.classList.contains('is-3d') || !document.querySelector('[data-scene]'), null, { timeout: 30_000 }).catch(() => {});
-  // scroll through so scroll-triggered reveals have fired
+  // Step through the page with instant scrolls (the site uses scroll-behavior: smooth,
+  // which would swallow programmatic jumps) so every IntersectionObserver reveal has fired.
   await page.evaluate(async () => {
-    for (let y = 0; y < document.body.scrollHeight; y += 400) { window.scrollTo(0, y); await new Promise(r => setTimeout(r, 40)); }
-    window.scrollTo(0, 0);
+    const step = Math.round(window.innerHeight * 0.6);
+    for (let y = 0; y < document.body.scrollHeight; y += step) { window.scrollTo({ top: y, behavior: 'instant' }); await new Promise(r => setTimeout(r, 120)); }
+    await new Promise(r => setTimeout(r, 900));
+    window.scrollTo({ top: 0, behavior: 'instant' });
   });
-  await page.waitForTimeout(1200);
+  await page.waitForTimeout(900);
 }
 
 try {
@@ -34,8 +37,8 @@ try {
     if (w === 390 || w === 1440) {
       for (const s of SECTIONS) {
         const el = s === 'hero' ? page.locator('[data-hero]') : s === 'footer' ? page.locator('footer.footer') : page.locator(`#${s}`);
-        await el.scrollIntoViewIfNeeded();
-        await page.waitForTimeout(800);
+        await el.evaluate(e => e.scrollIntoView({ behavior: 'instant', block: 'start' }));
+        await page.waitForTimeout(1000);
         await el.screenshot({ path: join(OUT, `${s}-${w}.png`) });
       }
       await page.goto(`${base}/menu.html`, { waitUntil: "load" });

@@ -14,8 +14,8 @@ const chrome = await launchChrome({ chromePath, chromeFlags: ['--headless=new', 
 const summary = {};
 try {
   for (const [name, formFactor] of [['mobile', 'mobile'], ['desktop', 'desktop']]) {
-    for (const path of ['/', '/menu.html']) {
-      const label = `${name}${path === '/' ? '' : '-menu'}`;
+    for (const [path, suffix] of [['/', ''], ['/?nowebgl=1', '-poster'], ['/menu.html', '-menu']]) {
+      const label = `${name}${suffix}`;
       const res = await lighthouse(`http://localhost:4198${path}`, {
         port: chrome.port, output: ['html', 'json'], logLevel: 'error', formFactor,
         screenEmulation: formFactor === 'desktop' ? { mobile: false, width: 1350, height: 940, deviceScaleFactor: 1, disabled: false } : undefined,

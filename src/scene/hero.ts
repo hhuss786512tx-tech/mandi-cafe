@@ -347,8 +347,17 @@ export function createHero(host: HTMLElement, canvas: HTMLCanvasElement, opts: H
     air.update(t, true);
     renderer.render(scene, camera);
   };
-  const loop = (now: number) => { frame(now); raf = (visible && !hidden) ? requestAnimationFrame(loop) : 0; };
-  const tick = () => { if (!still && visible && !hidden && !raf) raf = requestAnimationFrame(loop); };
+  // Devices without usable GPU acceleration (software GL) take hundreds of ms per
+  // frame; after a few such frames keep the still image instead of janking the page.
+  let slowFrames = 0, lastFrame = 0, bailed = false;
+  const loop = (now: number) => {
+    if (lastFrame && now - lastFrame > 120) { if (++slowFrames >= 4) bailed = true; } else if (lastFrame) slowFrames = 0;
+    lastFrame = now;
+    frame(now);
+    raf = (!bailed && visible && !hidden) ? requestAnimationFrame(loop) : 0;
+    if (bailed) console.info('3D hero: slow frames, keeping the still image.');
+  };
+  const tick = () => { if (!still && !bailed && visible && !hidden && !raf) { lastFrame = 0; raf = requestAnimationFrame(loop); } };
 
   if (opts.immediate) {
     // Poster/OG render: one deterministic frame, then signal the screenshot script.
