@@ -19,3 +19,9 @@ No owner-approved photographs have been received yet. When they arrive:
 3. Add an entry to `assets/img/source/manifest.json` with a meaningful `alt`.
 4. Run `npm run images`, then reference the ids in `src/content/site.json`
    (`gallery.images`, and `image` on signature menu items).
+
+## Preview-only (NOT approved)
+
+| File (source) | Depicts | Origin | Approval |
+|---|---|---|---|
+| storefront.jpg | Night view of the storefront and sign | Google Maps listing photo, user-uploaded (Feb 2026), pulled 2026-09-29 for the owner preview | **Pending.** Remove or replace with the owner's original before public launch. |

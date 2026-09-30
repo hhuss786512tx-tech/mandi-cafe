@@ -176,7 +176,7 @@ export const blocks = {
     return `<ul class="gallery__grid">${ids.map((id, i) => `
       <li class="gallery__item" data-wipe>
         <button type="button" class="gallery__btn" data-lightbox="${i}" aria-label="Open photo: ${esc(images[id].alt)}">
-          ${picture(images, id, { sizes: '(min-width: 64em) 33vw, (min-width: 40em) 50vw, 100vw', className: 'gallery__img' })}
+          ${picture(images, id, { sizes: '(min-width: 64em) 33vw, (min-width: 40em) 50vw, 100vw', className: 'gallery__img', position: '50% 30%' })}
         </button>
       </li>`).join('')}</ul>`;
   },

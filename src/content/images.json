@@ -19,5 +19,25 @@
     "lowRes": false,
     "origin": "Rendered from this site's own procedural 3D scene (scripts/poster.mjs). Not a photograph.",
     "approved": true
+  },
+  "storefront": {
+    "alt": "Mandi Cafe & Grill storefront at night with the illuminated Mandi sign, red accent lighting and string-lit patio at 734 Crabb River Rd",
+    "width": 1280,
+    "height": 1700,
+    "widths": [
+      640,
+      960,
+      1280
+    ],
+    "formats": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAgABgDASIAAhEBAxEB/8QAGgAAAQUBAAAAAAAAAAAAAAAAAAECBAUGA//EACQQAAICAgEDBAMAAAAAAAAAAAECAAMEERIFIUEGEzFRFSJx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIEAP/EAB0RAAICAgMBAAAAAAAAAAAAAAABAgMRIQQxQVH/2gAMAwEAAhEDEQA/AKRvTuQx7ETjZ6dywdBN/wAmloLHFTdmm1vcRrXUa9+ZWL0adbUmkZV+gZi/Kd4TRZF7tQ4FvJx32PEIHP4VUcZWRyxua1lWQy18SqL5lPdmWOrMFGvoSbhhsig8yQ3kxfx6KfkmJpE+W+yD03J3lGtjpHGmJhJlmAnA8f1P3CHQ0bJwWIs//9k=",
+    "source": "storefront.jpg",
+    "lowRes": false,
+    "origin": "Google Maps listing photo (user-uploaded, Feb 2026). PREVIEW ONLY for owner review.",
+    "approved": false
   }
 }

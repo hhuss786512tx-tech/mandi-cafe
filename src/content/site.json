@@ -116,7 +116,7 @@
   "gallery": {
     "confirmed": false,
     "note": "No owner-approved photos yet. Drop originals in assets/img/source/, record them in assets/img/CREDITS.md, run `npm run images`, then list their ids here (8–12 images).",
-    "images": []
+    "images": ["storefront"]
   },
   "visit": {
     "parking": { "value": "", "confirmed": false, "note": "Add a one-line parking note (e.g. free lot in front) once confirmed." },

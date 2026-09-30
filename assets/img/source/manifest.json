@@ -8,5 +8,11 @@
   "og-source.png": {
     "skip": true,
     "origin": "Rendered hero composition used for public/og.jpg (scripts/poster.mjs). Not part of the srcset pipeline."
+  },
+  "storefront.jpg": {
+    "id": "storefront",
+    "alt": "Mandi Cafe & Grill storefront at night with the illuminated Mandi sign, red accent lighting and string-lit patio at 734 Crabb River Rd",
+    "origin": "Google Maps listing photo (user-uploaded, Feb 2026). PREVIEW ONLY for owner review.",
+    "approved": false
   }
 }
