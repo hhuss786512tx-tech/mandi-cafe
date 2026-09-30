@@ -1,4 +1,161 @@
 {
+  "booth-seating": {
+    "alt": "Traditional patterned booth cushions against a wood-panel wall beside a numbered table",
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      640,
+      960,
+      1280
+    ],
+    "formats": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASABgDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAIDBAUB/8QAIRAAAQQBBAMBAAAAAAAAAAAAAQACAxEEEhQhMQUiQRP/xAAWAQEBAQAAAAAAAAAAAAAAAAACAwH/xAAaEQADAQADAAAAAAAAAAAAAAAAAQIxAxEi/9oADAMBAAIRAxEAPwCHjs6F+HJDN6P1WCV5MxmpzoyDaw7acSftMfV3PS347oyHB7iGkfPqN+hx1JSJHsZQNIoy1ZN8IorjlaVdt4zpS8wgFcXHJ3Uos1fSItWsm8L3doiJBP/Z",
+    "source": "booth-seating.jpg",
+    "lowRes": false,
+    "origin": "Google Maps listing photo (user-uploaded). PREVIEW ONLY for owner review.",
+    "approved": false
+  },
+  "chai-and-sweets": {
+    "alt": "Two green cups of milky chai beside a small plate of sweets on a wooden table",
+    "width": 960,
+    "height": 1280,
+    "widths": [
+      640,
+      960
+    ],
+    "formats": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAgABgDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAUEBgECA//EACUQAAICAgIBAgcAAAAAAAAAAAECAAMEEQUSIRMxIiMyQUKRwf/EABYBAQEBAAAAAAAAAAAAAAAAAAIEAf/EABoRAQADAQEBAAAAAAAAAAAAAAEAAhEDMVH/2gAMAwEAAhEDEQA/ANr+GvRSQo/cVuzIxVh5B0TLLmg2I3a0/wAlfyrkqqVnHwsSO2pLbav2V1apqxd6pNrjtsD7QkqsYuQ3yT2J9zrUIXoHpHXm2NGOcjmMBguxYSv46ivItr5ezTutCJ9Ke0ywRj5UbivOx2DEAa8+CJtehfTxg68WmIaSdxuIi8jUisGTvomE5cYtqX1O+9Bh4EI9rCFw8yf/2Q==",
+    "source": "chai-and-sweets.jpg",
+    "lowRes": true,
+    "origin": "Google Maps listing photo (user-uploaded). PREVIEW ONLY for owner review.",
+    "approved": false
+  },
+  "chicken-mandi-tray": {
+    "alt": "Chicken mandi on a large steel tray over saffron rice, topped with fried onion strings and raisins",
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      640,
+      960,
+      1280
+    ],
+    "formats": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASABgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQD/8QAIhAAAgICAQQDAQAAAAAAAAAAAQIAAwQRBRIiMVETQmGR/8QAFwEAAwEAAAAAAAAAAAAAAAAAAgMEBf/EAB0RAAICAgMBAAAAAAAAAAAAAAECAAMRMQQSITL/2gAMAwEAAhEDEQA/ANMpkotrsxmNTa7gvqT5GZTmVk5KtZ0+NyTBDXWEuzfrGWW8eTXtSWPgATNucq3UmV1qpGcSDJqX4w1S9Kj6xK8ilcWgAts67olNDllyYuwAHyV8KqnickkDe/UwpZtDuP8AYiI5WoVUh5BiSuyYiJTX8iKbc//Z",
+    "source": "chicken-mandi-tray.jpg",
+    "lowRes": false,
+    "origin": "Google Maps listing photo (user-uploaded). PREVIEW ONLY for owner review.",
+    "approved": false
+  },
+  "dining-booths": {
+    "alt": "Dining room with patterned red booth seating, low tables and warm pendant lights",
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      640,
+      960,
+      1280
+    ],
+    "formats": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASABgDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAQFAQIDBv/EACEQAAEDAwUBAQAAAAAAAAAAAAEAAgMEESEFEhMiMRUy/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgMB/8QAHBEAAgIDAQEAAAAAAAAAAAAAAAECMRIhQQMR/9oADAMBAAIRAxEAPwCvk1Dn7ubkLU1ZMZcITtHpXVmnyiINbA8PvklZlpKlkRbx2YTkIZ/NKhz8IyeTsgSVJmLYw7Yw+3RSPmySHrtGcX9RByj01QaWj2bfFC1H8hEUXZXhVS4e0jBREVJ2CNH/2Q==",
+    "source": "dining-booths.jpg",
+    "lowRes": false,
+    "origin": "Google Maps listing photo (user-uploaded). PREVIEW ONLY for owner review.",
+    "approved": false
+  },
+  "dining-room-tv": {
+    "alt": "Dining room with teal ceiling lighting, patterned tablecloths and wall-mounted screens",
+    "width": 1280,
+    "height": 964,
+    "widths": [
+      640,
+      960,
+      1280
+    ],
+    "formats": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASABgDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQCAwX/xAAoEAACAgADBQkAAAAAAAAAAAABAgADBBFRBRIhMkEGExQiMTRxgYL/xAAYAQADAQEAAAAAAAAAAAAAAAAAAgQBA//EAB0RAAIDAAIDAAAAAAAAAAAAAAACAQMRITESIkL/2gAMAwEAAhEDEQA/APGqpNVe89PA9dJgYWyx8kI+5rCpZcGVnbIamd1psLFajvN1OkLJTfU2tLPHXJLNnecCxiTpEt2pX4TCV7rN3mfrEEZZjmBXrfeGwmwZObcTyy3ZHO/zESeSr5gz2j9j+oiJ0r6Ens//2Q==",
+    "source": "dining-room-tv.jpg",
+    "lowRes": false,
+    "origin": "Google Maps listing photo (user-uploaded). PREVIEW ONLY for owner review.",
+    "approved": false
+  },
+  "foil-tray-chicken": {
+    "alt": "Chicken mandi in a foil takeout tray over saffron rice with fried onion",
+    "width": 960,
+    "height": 1280,
+    "widths": [
+      640,
+      960
+    ],
+    "formats": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAgABgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQH/xAAlEAACAgICAQIHAAAAAAAAAAABAgADBBESIUETIhQxMlFhcbH/xAAYAQACAwAAAAAAAAAAAAAAAAABBAACA//EAB4RAAIDAAEFAAAAAAAAAAAAAAABAgMRIRIUMUFR/9oADAMBAAIRAxEAPwCq3JsrPCvQHkmRtnWJcxVt/cgfKS5+WC/CttE9mKrv9OtVB5Fj7hE7LZJ8DVdS9mymTZlUlbG5j+Qk9SlAWVtDX0wmXcv4SVePDHtob4s73pj4lVSBshK2TXEb/cGvrybuWI2xWvYEdgLa1xdtOPHKGdc34QVZiwbaTVjMV7c9H8QncjEyWR+NZ9w60YSkKnnKBOfU9P/Z",
+    "source": "foil-tray-chicken.jpg",
+    "lowRes": true,
+    "origin": "Google Maps listing photo (user-uploaded). PREVIEW ONLY for owner review.",
+    "approved": false
+  },
+  "foil-trays-lamb": {
+    "alt": "Foil catering trays of rice topped with lamb shank and mutton",
+    "width": 960,
+    "height": 1280,
+    "widths": [
+      640,
+      960
+    ],
+    "formats": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAgABgDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAMFAQIE/8QAJRAAAgEDAgYDAQAAAAAAAAAAAQIDAAQREiEFExQiI0ExMmGB/8QAFgEBAQEAAAAAAAAAAAAAAAAABAMC/8QAGxEAAgIDAQAAAAAAAAAAAAAAAAECERIhMRP/2gAMAwEAAhEDEQA/ANOd4hGHEjexSmwEJeNh/djT7trS3c6YcP8ADEUpZojAFZiVJ+p9UOT2xUbrhR4fEGCyxLpUjeiscGurdJDChI1HbPuirQeiU07I92jXE8iA4y1c8Vq5chtQ0jB/ap9JI7IAQGXdiaJlRr4RwMX27x+0H1u0hTS1ZOhVrZ+YmotGc4NFWPKJAOkyQO7bYiiqRlNq8TEsb6f/2Q==",
+    "source": "foil-trays-lamb.jpg",
+    "lowRes": true,
+    "origin": "Google Maps listing photo (user-uploaded). PREVIEW ONLY for owner review.",
+    "approved": false
+  },
+  "half-chicken-mandi": {
+    "alt": "Half chicken mandi: two roast chicken pieces over saffron rice with fried onion and a side salad",
+    "width": 1280,
+    "height": 964,
+    "widths": [
+      640,
+      960,
+      1280
+    ],
+    "formats": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASABgDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAJBAAAQQBAwQDAQAAAAAAAAAAAQACAwQRBRIhFDFhcSJBQlH/xAAYAQADAQEAAAAAAAAAAAAAAAACAwQBBf/EABwRAAICAgMAAAAAAAAAAAAAAAABAgMREiEyQf/aAAwDAQACEQMRAD8AjnhZZkE2oRgvaMBrftX1bdeCFsYaGNP5CURXuRnON+c+kkpBhc7c3aP6ufZbLdorhCOpBY091m07phuaeSTwAiv03UK77MkHA3diexRUOyxJcCNYNvLMSm5zZRgkeir9Uc7pm/I8+URG+yM8MckjBHB8IiJoB//Z",
+    "source": "half-chicken-mandi.jpg",
+    "lowRes": false,
+    "origin": "Google Maps listing photo (user-uploaded). PREVIEW ONLY for owner review.",
+    "approved": false
+  },
   "hero-poster": {
     "alt": "Copper mandi tray piled with saffron rice, fried onion, raisins and almonds, topped with a roasted chicken quarter",
     "width": 1920,
@@ -19,6 +176,65 @@
     "lowRes": false,
     "origin": "Rendered from this site's own procedural 3D scene (scripts/poster.mjs). Not a photograph.",
     "approved": true
+  },
+  "lamb-platter-sauces": {
+    "alt": "Steel platter of pulled lamb over mandi rice with five small dishes of sauces along the edge",
+    "width": 960,
+    "height": 1280,
+    "widths": [
+      640,
+      960
+    ],
+    "formats": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAgABgDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUBBAYC/8QAIhAAAgEEAgIDAQAAAAAAAAAAAQIDAAQREiExE0EFIlFh/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIEBf/EABwRAAICAwEBAAAAAAAAAAAAAAECABESITEDBP/aAAwDAQACEQMRAD8AiaKH4+1UQyiTcftVvKQPs2wPQpZExWbeQ/X0pphJHyHC68ej3Uzmm3KU5QnF9EzBZlXjHIopjZPG4MZGz44opV+jHUR03M+hDQhpO890weTcax5wVFU7fXIBQa/prRWVl5kU20ZOByTT+qG8gIEdQKMXQRm3kSVZMvnBAoq8kcZvGLqVZPX9orOYM3VJlWSr2f/Z",
+    "source": "lamb-platter-sauces.jpg",
+    "lowRes": true,
+    "origin": "Google Maps listing photo (user-uploaded). PREVIEW ONLY for owner review.",
+    "approved": false
+  },
+  "lamb-shanks-almonds": {
+    "alt": "Lamb shanks over yellow mandi rice with toasted almonds, raisins and green chili sauce",
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      640,
+      960,
+      1280
+    ],
+    "formats": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASABgDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQDAQX/xAAkEAABAwMEAQUAAAAAAAAAAAABAAIDBBEhBRMiQRIUM0JRcf/EABYBAQEBAAAAAAAAAAAAAAAAAAMEAv/EAB0RAAICAgMBAAAAAAAAAAAAAAABAhEDITEyM3H/2gAMAwEAAhEDEQA/AJdVlE1YTJZp7DVMyrFKBsHJ7VL4Y53RyZBccrktDGJrHl2B9KCWWnUitR1o2i1HdZd8IcfkUWlBQXd5NaAHYd+ImxtyVmJ8kdN7wWhJ9UM9IiCXo/hpdT1NDJMctzfkiIqkEf/Z",
+    "source": "lamb-shanks-almonds.jpg",
+    "lowRes": false,
+    "origin": "Google Maps listing photo (user-uploaded). PREVIEW ONLY for owner review.",
+    "approved": false
+  },
+  "samosas": {
+    "alt": "Two golden samosas on a plate with fresh salad and a small dish of red sauce",
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      640,
+      960,
+      1280
+    ],
+    "formats": [
+      "avif",
+      "webp",
+      "jpg"
+    ],
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAASABgDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAYFAgT/xAAiEAACAgICAgIDAAAAAAAAAAABAgADBBEFMRIhBkETMlH/xAAYAQADAQEAAAAAAAAAAAAAAAACAwQAAf/EABwRAAICAgMAAAAAAAAAAAAAAAABAhIDESExQf/aAAwDAQACEQMRAD8Axa0usyN7A0fZ+hNOjF8lZxkmxQOtdTrhyDh3UCsPY537/k9mIhpqetaSS3rUhzzaVUOx1b5J65czAyUyhtk3oExKXl1VOEZLkCuf1ESiG6rYt9mHhsVyUKkg7+pf4yL+JD4jeu9RE0vAWSHydmPIEEnQHW4iIbOn/9k=",
+    "source": "samosas.jpg",
+    "lowRes": false,
+    "origin": "Google Maps listing photo (user-uploaded). PREVIEW ONLY for owner review.",
+    "approved": false
   },
   "storefront": {
     "alt": "Mandi Cafe & Grill storefront at night with the illuminated Mandi sign, red accent lighting and string-lit patio at 734 Crabb River Rd",

@@ -15,7 +15,7 @@ Generated from `src/content/site.json` on 2026-09-30. Each item is a field with
 10. **`story`** — No owner-provided story yet. The paragraphs below only state what public listings show. Replace with the owner's own words (who cooks, where the recipes come from, when they opened).
 11. **`menu`** — Items and prices were transcribed from the restaurant's public delivery listings (Postmates / DoorDash Storefront). Delivery prices are often marked up. Confirm every item and in-store price with the owner, add anything missing (drinks, sides, desserts, Yemeni tea), and remove anything no longer served.
 12. **`menu.printable`** — menu.html is print-ready (File → Print → Save as PDF). Confirm whether the owner also wants a separately designed PDF menu.
-13. **`gallery`** — No owner-approved photos yet. Drop originals in assets/img/source/, record them in assets/img/CREDITS.md, run `npm run images`, then list their ids here (8–12 images).
+13. **`gallery`** — Preview photos are from the Google Maps listing and are NOT owner-approved yet. Get the owner's OK or their originals (assets/img/source/, record in assets/img/CREDITS.md) before public launch.
 14. **`visit.parking`** — Add a one-line parking note (e.g. free lot in front) once confirmed.
 15. **`visit.hookah`** — Public listings describe the venue as a hookah lounge (outdoor, indoor after 10 pm). Not mentioned on the site until the owner confirms it should be.
 16. **`footer.since`** — Do not add 'since YYYY' or 'family recipe' claims until verified.

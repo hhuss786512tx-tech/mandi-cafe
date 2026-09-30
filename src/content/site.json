@@ -74,9 +74,9 @@
         "name": "Mandi",
         "blurb": "Rice cooked over the meat's own stock, finished with fried onions, raisins and almonds.",
         "items": [
-          { "id": "half-chicken-mandi", "name": "Half Chicken Mandi", "description": "Half a chicken over mandi rice, with fried onions and raisins.", "price": 14.99 },
+          { "id": "half-chicken-mandi", "name": "Half Chicken Mandi", "description": "Half a chicken over mandi rice, with fried onions and raisins.", "price": 14.99, "image": "half-chicken-mandi" },
           { "id": "full-chicken-mandi", "name": "Full Chicken Mandi", "description": "A whole chicken over mandi rice. Built for two.", "price": 19.99 },
-          { "id": "lamb-shank-mandi", "name": "Lamb Shank Mandi", "description": "Slow-cooked lamb shank over mandi rice with raisins and almonds.", "price": 14.99 },
+          { "id": "lamb-shank-mandi", "name": "Lamb Shank Mandi", "description": "Slow-cooked lamb shank over mandi rice with raisins and almonds.", "price": 14.99, "image": "lamb-shanks-almonds" },
           { "id": "goat-mandi", "name": "Goat Mandi", "description": "Tender goat over mandi rice with raisins, almonds and caramelized onions.", "price": 14.99 },
           { "id": "fish-mandi", "name": "Full Fish Mandi", "description": "Whole fish over mandi rice.", "price": 14.99 }
         ]
@@ -115,8 +115,8 @@
   },
   "gallery": {
     "confirmed": false,
-    "note": "No owner-approved photos yet. Drop originals in assets/img/source/, record them in assets/img/CREDITS.md, run `npm run images`, then list their ids here (8–12 images).",
-    "images": ["storefront"]
+    "note": "Preview photos are from the Google Maps listing and are NOT owner-approved yet. Get the owner's OK or their originals (assets/img/source/, record in assets/img/CREDITS.md) before public launch.",
+    "images": ["chicken-mandi-tray", "storefront", "samosas", "lamb-shanks-almonds", "chai-and-sweets", "foil-trays-lamb", "dining-booths", "half-chicken-mandi", "lamb-platter-sauces", "dining-room-tv", "booth-seating", "foil-tray-chicken"]
   },
   "visit": {
     "parking": { "value": "", "confirmed": false, "note": "Add a one-line parking note (e.g. free lot in front) once confirmed." },
