@@ -11,6 +11,7 @@
     "poster": "node scripts/poster.mjs",
     "screenshots": "node scripts/screenshots.mjs",
     "lighthouse": "node scripts/lighthouse.mjs",
+    "preview:artifact": "node scripts/preview-artifact.mjs",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
