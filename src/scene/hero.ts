@@ -292,6 +292,7 @@ export function createHero(host: HTMLElement, canvas: HTMLCanvasElement, opts: H
   scene.add(rig);
 
   // ---- sizing ----
+  let lastNow = 0, raf = 0;
   const resize = () => {
     const w = host.clientWidth, h = host.clientHeight;
     if (!w || !h) return;
@@ -301,6 +302,9 @@ export function createHero(host: HTMLElement, canvas: HTMLCanvasElement, opts: H
     const k = camera.aspect < 1.1 ? Math.pow(1.1 / camera.aspect, 0.55) : 1;
     camBase.set(0.1, 2.1 * k, 4.6 * k);
     camera.updateProjectionMatrix();
+    // setSize clears the drawing buffer; when the loop is not running
+    // (still frame or bailed out) redraw so the canvas never goes blank.
+    if (!raf && lastNow) frame(lastNow);
   };
   const ro = new ResizeObserver(resize);
   ro.observe(host);
@@ -327,7 +331,7 @@ export function createHero(host: HTMLElement, canvas: HTMLCanvasElement, opts: H
   onScroll();
 
   // ---- render loop: only while visible and the tab is active ----
-  let visible = true, hidden = document.hidden, raf = 0, t0 = performance.now();
+  let visible = true, hidden = document.hidden, t0 = performance.now();
   const still = Boolean(opts.immediate); // headless captures render one frame and never loop
   const io = new IntersectionObserver(([e]) => { visible = e.isIntersecting; tick(); }, { threshold: 0 });
   if (!still) {
@@ -336,6 +340,7 @@ export function createHero(host: HTMLElement, canvas: HTMLCanvasElement, opts: H
   }
 
   const frame = (now: number) => {
+    lastNow = now;
     const t = (now - t0) / 1000;
     current.lerp(target, 0.05);
     rig.rotation.x = current.y * 0.07;

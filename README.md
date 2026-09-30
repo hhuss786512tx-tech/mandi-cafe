@@ -99,3 +99,39 @@ mandi-cafe/
   assets/img/source/      originals + manifest.json;  assets/img/CREDITS.md
   docs/                   screenshots and Lighthouse reports
 ```
+
+## Quality gates (last run)
+
+Lighthouse 13, simulated throttling, run inside a cloud container with no
+GPU (Chromium falls back to SwiftShader, a software renderer). Reports are in
+`docs/lighthouse/`.
+
+| Page | Perf | A11y | Best practices | SEO | LCP | CLS | TBT |
+|---|---|---|---|---|---|---|---|
+| Home, mobile, 3D path | 61 | 100 | 100 | 100 | 2.8 s | 0 | 8.9 s |
+| Home, mobile, poster path (`?nowebgl=1`) | 93 | 100 | 100 | 100 | 2.8 s | 0 | 0 ms |
+| Menu, mobile | 98 | 100 | 100 | 100 | 2.3 s | 0 | 0 ms |
+| Home, desktop, 3D path | 37 | 100 | 100 | 100 | 2.8 s | 0.001 | 9.0 s |
+| Home, desktop, poster path | 71 | 100 | 100 | 100 | 2.9 s | 0.001 | 0 ms |
+| Menu, desktop | 81 | 100 | 100 | 100 | 2.3 s | 0 | 0 ms |
+
+The 3D-path blocking time is the software renderer: building the environment
+map and compiling shaders takes about 3.7 s there, versus tens of
+milliseconds on a device with a GPU. The site detects that case (first frame
+over 150 ms) and keeps the still image, but the one-off setup cost is still
+recorded. Re-run `npm run lighthouse` on a machine with a GPU for the
+representative 3D-path score; the poster-path row is the fair no-GPU number.
+
+LCP is the poster image (AVIF, preloaded) on the home page and the heading on
+the menu page. The desktop LCP figures above are dominated by the simulated
+slow-4G network profile Lighthouse applies to desktop as well.
+
+Other gates: `node scripts/contrast.mjs` passes every pair at AA or better;
+JSON-LD (`Restaurant` on the home page, `Menu` on the menu page) parses and
+carries name, image, address, telephone, cuisine, hours and menu URL. Paste
+a deployed URL into Google's Rich Results Test after launch; it cannot run
+against localhost.
+
+Screenshots at 360, 390, 768, 1024, 1440 and 1920 px, per-section crops at
+390 and 1440, plus reduced-motion and no-WebGL hero fallbacks, are in
+`docs/screenshots/`.

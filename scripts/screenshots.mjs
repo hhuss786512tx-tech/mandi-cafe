@@ -25,7 +25,8 @@ async function settle(page) {
     await new Promise(r => setTimeout(r, 900));
     window.scrollTo({ top: 0, behavior: 'instant' });
   });
-  await page.waitForTimeout(900);
+  await page.waitForFunction(() => ![...document.querySelectorAll('[data-reveal]')].some(e => getComputedStyle(e).opacity !== '1'), null, { timeout: 15_000 }).catch(() => console.warn('! some reveals still hidden'));
+  await page.waitForTimeout(600);
 }
 
 try {

@@ -47,6 +47,10 @@ export function mountMotion(): void {
   gsap.ticker.lagSmoothing(0);
 
   const plays = new Map<Element, Play>();
+  // The root extends far above the viewport, so an element counts as
+  // intersecting from the moment it enters until it is unobserved. A fast
+  // flick that carries it from below to above between two observer checks
+  // still produces exactly one notification.
   const io = new IntersectionObserver(entries => {
     for (const e of entries) {
       if (e.isIntersecting || e.boundingClientRect.top < 0) {
@@ -55,7 +59,7 @@ export function mountMotion(): void {
         io.unobserve(e.target);
       }
     }
-  }, { rootMargin: '0px 0px -8% 0px', threshold: 0 });
+  }, { rootMargin: '100000px 0px -8% 0px', threshold: 0 });
 
   const register = (el: Element, setup: () => Play) => { plays.set(el, setup()); io.observe(el); };
 
