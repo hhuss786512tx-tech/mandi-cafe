@@ -1,12 +1,12 @@
 {
   "mobile": {
-    "performance": 56,
+    "performance": 61,
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
     "lcp": "2.8 s",
     "cls": "0",
-    "tbt": "16,840 ms",
+    "tbt": "8,920 ms",
     "fcp": "2.3 s"
   },
   "mobile-poster": {
@@ -14,7 +14,7 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "lcp": "2.9 s",
+    "lcp": "2.8 s",
     "cls": "0",
     "tbt": "0 ms",
     "fcp": "2.3 s"
@@ -36,15 +36,15 @@
     "seo": 100,
     "lcp": "2.8 s",
     "cls": "0.001",
-    "tbt": "15,960 ms",
+    "tbt": "9,000 ms",
     "fcp": "2.3 s"
   },
   "desktop-poster": {
-    "performance": 72,
+    "performance": 71,
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "lcp": "2.8 s",
+    "lcp": "2.9 s",
     "cls": "0.001",
     "tbt": "0 ms",
     "fcp": "2.3 s"
