@@ -1,6 +1,6 @@
 {
   "$comment": "Single source of truth for the site. Edit this file, then run `npm run build`. Every fact with confirmed:false is still open with the owner and is listed in the Build notes section while buildNotes is true.",
-  "buildNotes": true,
+  "buildNotes": false,
   "name": "Mandi Cafe & Grill",
   "shortName": "Mandi Cafe",
   "nameArabic": { "text": "مندي", "confirmed": false, "note": "Only the word 'mandi' (مندي) is shown as a typographic accent. Confirm the full Arabic spelling of the restaurant name with the owner before extending it." },
