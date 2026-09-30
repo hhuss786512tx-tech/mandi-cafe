@@ -367,9 +367,13 @@ export function createHero(host: HTMLElement, canvas: HTMLCanvasElement, opts: H
     (window as Window & { __sceneReady?: boolean }).__sceneReady = true;
     // Still frame only: headless renders (poster, OG, screenshots) never loop.
   } else {
+    // First frame includes shader compilation and shadow/env setup. If it is
+    // slow the device cannot sustain the loop: keep the still image instead.
+    const t1 = performance.now();
     frame(t0);
     host.classList.add('is-3d');
-    tick();
+    if (performance.now() - t1 > 150) { bailed = true; console.info('3D hero: slow first frame, keeping the still image.'); }
+    else tick();
   }
 
   return {
