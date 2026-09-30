@@ -1,0 +1,62 @@
+{
+  "mobile": {
+    "performance": 56,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcp": "2.8 s",
+    "cls": "0",
+    "tbt": "16,840 ms",
+    "fcp": "2.3 s"
+  },
+  "mobile-poster": {
+    "performance": 93,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcp": "2.9 s",
+    "cls": "0",
+    "tbt": "0 ms",
+    "fcp": "2.3 s"
+  },
+  "mobile-menu": {
+    "performance": 98,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcp": "2.3 s",
+    "cls": "0",
+    "tbt": "0 ms",
+    "fcp": "1.7 s"
+  },
+  "desktop": {
+    "performance": 37,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcp": "2.8 s",
+    "cls": "0.001",
+    "tbt": "15,960 ms",
+    "fcp": "2.3 s"
+  },
+  "desktop-poster": {
+    "performance": 72,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcp": "2.8 s",
+    "cls": "0.001",
+    "tbt": "0 ms",
+    "fcp": "2.3 s"
+  },
+  "desktop-menu": {
+    "performance": 81,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcp": "2.3 s",
+    "cls": "0",
+    "tbt": "0 ms",
+    "fcp": "1.7 s"
+  }
+}

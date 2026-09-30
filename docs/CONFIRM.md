@@ -1,6 +1,6 @@
 # Open items to confirm with the owner
 
-Generated from `src/content/site.json` on 2026-09-29. Each item is a field with
+Generated from `src/content/site.json` on 2026-09-30. Each item is a field with
 `"confirmed": false`; set the value, flip the flag, rebuild.
 
 1. **`nameArabic`** — Only the word 'mandi' (مندي) is shown as a typographic accent. Confirm the full Arabic spelling of the restaurant name with the owner before extending it.
